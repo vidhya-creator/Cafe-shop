@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafe</title>
+    <style>
+        nav {
+            background-color: white;
+            padding: 10px;
+        }
+
+        .navmain {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        .item1 {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-left: 25px;
+        }
+
+        .item2 {
+            display: flex;
+            margin-right: 40px;
+        }
+
+        .mainitem {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .color {
+            text-decoration: none;
+            color: red;
+            font-size: 20px;
+        }
+
+        .ice {
+            display: flex;
+        }
+
+        .but1 {
+            background-image: url(https://i.pinimg.com/736x/fd/cc/d5/fdccd579ace1294761ae57530bce53a6.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 450px;
+            height: 450px;
+        }
+
+        .allbut {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 300px;
+            margin-left: 170px;
+            padding: 5px;
+            text-transform: uppercase;
+
+        }
+
+        .but2 {
+            background-image: url(https://i.pinimg.com/736x/84/10/69/841069bbc533aef6ac8743401650f9c7.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 450px;
+            height: 450px;
+        }
+
+        .but3 {
+            background-image: url(https://i.pinimg.com/736x/ec/a9/34/eca93463bb53069aa494b352a8e5a84a.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 450px;
+            height: 450px;
+        }
+
+        @font-face {
+            font-family: myFont;
+            src: url(Orebeaut\ Stumbler\ DEMO\ VERSION.ttf);
+        }
+
+        .taste {
+            font-family: myFont;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        @font-face {
+            font-family: myfontstyle;
+            src: url(Buk\ Judes.ttf);
+        }
+
+        .histry {
+            font-family: myfontstyle;
+            font-size: 70px;
+            text-align: center;
+            color: red;
+        }
+
+        .storybut {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-left: 600px;
+            padding: 10px;
+            text-transform: uppercase;
+
+        }
+
+        .backimg {
+            background-image: url(https://i.pinimg.com/originals/f6/6f/50/f66f50688b9f5cc756a022364cecbe44.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 1340px;
+            height: 500px;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+        }
+
+        hr {
+            margin-top: 20px;
+        }
+
+        .mainflex {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .footer-cont {
+            color: gray;
+        }
+
+        .copy {
+            margin-left: 65px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: white;
+            color: red;
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+
+            display: none;
+            position: absolute;
+            background-color: coral;
+            min-width: 150px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="navmain">
+            <div class="mainitem">
+                <div class="item1">
+                    <div>
+                        <div><img src="https://www.cafecoffeeday.com/sites/all/themes/ccd/assets/images/common/logo.png"
+                                alt="" width="50px" height="50px"></div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Cafe Menu</button>
+                        <div class="dropdown-content">
+                            <a href="">Food For Mood</a><br>
+                            <a href="">hot classics</a><br>
+                            <a href="">all-time chillers</a><br>
+                            <a href="">all-day delights</a><br>
+                            <a href="">sweet tooth</a>
+                        </div>
+                    </div>
+                    <div><a class="color" href="">E-Shop</a></div>
+                    <div><a class="color" href=""><img
+                                src="https://www.cafecoffeeday.com/sites/all/themes/ccd/assets/images/cafe-menu/cart-icon.gif"
+                                alt="" width="40px" height="40px"></a></div>
+                    <div><a class="color" href="">Order Online</a></div>
+                    <div><a class="color" href="">Cafe Finder/Cafe Locator</a></div>
+                    <div><a class="color" href="">Mobile App/CCD Mobile App</a></div>
+                </div>
+                <div class="item2">
+                    <div><a class="color" href=""><img
+                                src="https://i.pinimg.com/736x/03/09/1f/03091fb46740ca5e94e9e7cd7ffce0be.jpg" alt=""
+                                width="30px" height="30px" style="margin-top: 10px;"></a></div>
+                    <div><a class="color" href=""><img
+                                src="https://i.pinimg.com/736x/68/ea/d4/68ead4d2120358c339fb7c7c3c105717.jpg" alt=""
+                                width="50px" height="50px"></a></div>
+                    <div><a class="color" href=""><img
+                                src="https://i.pinimg.com/736x/3d/91/09/3d910919cf4d41c1114457504dc29201.jpg" alt=""
+                                width="35px" height="35px" style="margin-top: 5px;"></a></div>
+                </div>
+            </div>
+        </nav>
+        <div class="ice">
+            <div class="but1"><a href="#"><button class="allbut">what's new</button></a></div>
+            <div class="but2"><a href=""><button class="allbut">find a cafe near you</button></a></div>
+            <div class="but3"><a href=""><button class="allbut">shop now</button></a></div>
+        </div>
+        <div class="backimg">
+            <p class="taste">coffee tastes best</p>
+            <h1 class="histry">with a dash of <br>
+                HISTORY</h1>
+            <div><button class="storybut">read our story</button></div>
+        </div>
+        <div class="icon">
+            <div><a href=""><img src="https://i.pinimg.com/736x/19/42/d5/1942d5deb0f788e6228054cd92767ff6.jpg" alt=""
+                        width="70px" height="60px"></a></div>
+            <div><a href=""><img src="https://i.pinimg.com/736x/e7/85/be/e785bebd165969784c144452e8c457fe.jpg" alt=""
+                        width="60px" height="60px"></a></div>
+            <div><a href=""><img style="border-radius: 10px; margin-top: 7px; margin-left: 10px;"
+                        src="https://i.pinimg.com/736x/db/89/2a/db892a8997a60131b30c68218dfb7026.jpg" alt=""
+                        width="45px" height="45px"></a></div>
+            <div><a href=""><img style="border-radius: 10px; margin-top: 7px; margin-left: 15px;"
+                        src="https://i.pinimg.com/736x/86/78/2a/86782ad5cb4776b445b4cc91d18e854a.jpg" alt=""
+                        width="45px" height="45px"></a></div>
+            <div><a href=""><img style="margin-left: 10px;"
+                        src="https://i.pinimg.com/736x/51/b8/f7/51b8f778a53d334ddfb1a08132d60807.jpg" alt=""
+                        width="60px" height="60px"></a></div>
+        </div>
+        <hr width="90%">
+        <div class="mainflex">
+            <div>
+                <div>
+                    <h1>Quick Links</h1>
+                </div>
+                <div><a href="">
+                        <p class="footer-cont">Cafe menu</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">Cafe finder/Cafe locator</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">Customer care</p>
+                    </a></div>
+            </div>
+            <div>
+                <div>
+                    <h1>Cafe Menu</h1>
+                </div>
+                <div><a href="">
+                        <p class="footer-cont">Food For Mood</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">Hot Classic</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">All-Time Chillers</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">All-Day Delights</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">Sweet Tooth x 32</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">Nutritional Info</p>
+                    </a></div>
+            </div>
+            <div>
+                <div>
+                    <h1>Shop</h1>
+                </div>
+                <div><a href="">
+                        <p class="footer-cont">Coffee Mugs and Cups</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">Coffee Makers</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">Coffee Powders</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">Gifts</p>
+                    </a></div>
+            </div>
+
+            <div>
+                <div>
+                    <h1>Business</h1>
+                </div>
+                <div><a href="">
+                        <p class="footer-cont">Lease Enquiry</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">Advertise With Us</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">Cofeee Wending Machine</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">Outdoor Catering Services</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">Contact Us</p>
+                    </a></div>
+            </div>
+            <div>
+                <div>
+                    <h1>About Us</h1>
+                </div>
+                <div><a href="">
+                        <p class="footer-cont">Awards</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">Business</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">Governance</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">Bean to Cup</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">News and Events</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">Careers</p>
+                    </a></div>
+                <div><a href="">
+                        <p class="footer-cont">Contact Us</p>
+                    </a></div>
+            </div>
+        </div>
+        <hr width="90%">
+        <div class="copy">&copy;Cafe Coffee Day. All rights reserved.</div>
+    </div>
+</body>
+
+</html>
